@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS links (
+  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  long_url VARCHAR(255) NOT NULL,
+  short_code VARBINARY(6) NOT NULL,
+
+  PRIMARY KEY (id),
+  KEY short_code (short_code)
+)
+ENGINE=InnoDB;

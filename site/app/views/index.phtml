@@ -1,0 +1,16 @@
+<?php use Phalcon\Tag; ?>
+
+<h2>Shot Links Generator</h2>
+
+<?php echo Tag::form("main/generate"); ?>
+
+<p>
+    <label for="name">Full address</label>
+    <?php echo Tag::textField("url") ?>
+</p>
+
+<p>
+    <?php echo Tag::submitButton("Generate") ?>
+</p>
+
+</form>
